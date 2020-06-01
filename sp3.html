@@ -177,7 +177,7 @@
                                         <td data-title="語言版本" class="aCenter">中文</td>
                                         <td data-title="申請姓名" class="aCenter">朱曉婷</td>
                                         <td data-title="狀態" class="aCenter"><span class="check-ok">審核通過</span></td>
-                                        <td class="aCenter"><button class="btn del-btn">取消</button></td>
+                                        <td class="aCenter"><button class="btn del-btn" id="openModal">取消</button></td>
                                     </tr>
                                     <tr>
                                         <td data-title="訂單編號" class="num">2020102A001</td>
@@ -212,30 +212,29 @@
         </div>
         <!--視窗-->
         <div id="modal1" class="modal">
-            <h2>可加購資訊</h2>
+            <h2>取消申請</h2>
             <table width="100%" border="0">
               <tbody>
                 <tr>
-                  <th scope="col">加購請打勾</th>
-                  <th scope="col">設備</th>
-                  <th scope="col">費用/每場次</th>
-              </tr>
-              <tr>
-                <td class="aCenter"><input name="" type="checkbox" value=""></td>
-                <td>外加接電</td>
-                <td class="price">$ 4,000</td>
+                  <th scope="col">取消申請</th>
+                  <td>
+                      <select id="" name="">
+                        <option value="">取消申請</option>
+                    </select>
+                </td>
             </tr>
             <tr>
-              <td class="aCenter"><input name="" type="checkbox" value=""></td>
-              <td>錄影</td>
-              <td class="price">$ 1,000</td>
-          </tr>
-      </tbody>
-  </table>
-  <div class="btn_grp">
-    <button class="btn btn-reset">取消</button>
-    <button class="btn btn-submit">確定</button>
-</div>
+                <th scope="col"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>取消申請原因</th>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn_grp">
+        <button class="btn btn-reset">取消</button>
+        <button class="btn btn-submit">確定</button>
+    </div>
 </div>
 <!-- footer Start-->
 <footer>
