@@ -148,34 +148,34 @@ select::-ms-expand {
                 width: 100%;
                 display: block;
             }
-            &+.datepick {
-                margin-left: .3em;
-                margin-right: 0;
-                padding-right: 0;
-                &:before {
-                    content: "~";
-                    font-size: 1.5em;
-                    display: inline-block;
-                    position: absolute;
-                    left: -.65em;
-                    top: .3em;
-                    color: #777;
-                }
-                @include screen('xs_mobile') {
-                    margin-left: 0em;
-                    &:before {
-                        display: none;
-                    }
-                }
-                i {
-                    right: .5em;
-                }
-            }
+            // &+.datepick {
+            //     margin-left: .3em;
+            //     margin-right: 0;
+            //     padding-right: 0;
+            //     &:before {
+            //         content: "~";
+            //         font-size: 1.5em;
+            //         display: inline-block;
+            //         position: absolute;
+            //         left: -.65em;
+            //         top: .3em;
+            //         color: #777;
+            //     }
+            //     @include screen('xs_mobile') {
+            //         margin-left: 0em;
+            //         &:before {
+            //             display: none;
+            //         }
+            //     }
+            //     i {
+            //         right: .5em;
+            //     }
+            // }
             i {
                 position: absolute;
                 padding: .37em .1em !important;
-                right: 1em;
-                top: .2em;
+                right: .73em;
+                top: .25em;
                 min-width: 1em;
                 background: none;
                 border: none;
@@ -189,6 +189,13 @@ select::-ms-expand {
             >input[type="text"] {
                 width:10em;
                 padding-right: 2em;
+                @include screen('xs_mobile') {
+                    width: 100%;
+                }
+            }
+            >input[type="date"] {
+                width:10em;
+                padding-right: 0;
                 @include screen('xs_mobile') {
                     width: 100%;
                 }

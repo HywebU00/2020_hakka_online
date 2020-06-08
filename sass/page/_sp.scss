@@ -100,6 +100,42 @@
 				margin: 0 0 1em 0;  
 			}
 		}
+
+		.y-btn{
+			margin-left: 1%;
+
+			a{
+				background: #fff;
+				color:#1c1c1c;
+				font-size: 1.15em;
+				position: relative;
+				padding: 15px 30px 15px 60px;
+				display: block;
+				box-shadow: 0 0 5px 1px #ccc;
+				border-radius: 30px;
+
+
+				&:hover, &:focus{
+					background: darken(#fff, 8);
+					box-shadow: 0 2px 5px 1px #999;
+				}
+				&:before{
+					content:"";
+					width:34px;
+					height:34px;
+					position: absolute;
+					top:.5em;
+					left:.8em;
+					background:#6001d1 url('../images/y-btn.png')no-repeat center center;
+					background-size: 20px auto;
+					border-radius: 20px;
+				}
+			}
+			@include screen('mobile') {
+				width: 100%;
+				margin: 0 0 1em 0;  
+			}
+		}
 	}
 }
 //loginbtn2
@@ -176,6 +212,42 @@
 					top:.5em;
 					left:.8em;
 					background:#db0000 url('../images/g-btn.png')no-repeat center center;
+					background-size: 20px auto;
+					border-radius: 20px;
+				}
+			}
+			@include screen('mobile') {
+				width: 100%;
+				margin: 0 0 1em 0;  
+			}
+		}
+
+		.y-btn{
+			margin-left: 1%;
+
+			a{
+				background: #fff;
+				color:#1c1c1c;
+				font-size: 1.15em;
+				position: relative;
+				padding: 15px 20px 15px 55px;
+				display: block;
+				box-shadow: 0 0 5px 1px #ccc;
+				border-radius: 30px;
+
+
+				&:hover, &:focus{
+					background: darken(#fff, 8);
+					box-shadow: 0 2px 5px 1px #999;
+				}
+				&:before{
+					content:"";
+					width:34px;
+					height:34px;
+					position: absolute;
+					top:.5em;
+					left:.8em;
+					background:#6001d1 url('../images/y-btn.png')no-repeat center center;
 					background-size: 20px auto;
 					border-radius: 20px;
 				}

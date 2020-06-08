@@ -186,6 +186,35 @@ p{
       margin: 0 0 1em 0;  
   }
 }
+.y-btn{
+    width: 48%;
+    margin-right: 1%;
+    a{
+        background: #fff;
+        color:#1c1c1c;
+        font-size: 1.15em;
+        position: relative;
+        padding: 20px 10px 20px 20px;
+        &:hover, &:focus{
+            background: darken(#fff, 8);
+        }
+        &:before{
+            content:"";
+            width:34px;
+            height:34px;
+            position: absolute;
+            top:.8em;
+            left:15%;
+            background:#6001d1 url('../images/y-btn.png')no-repeat center center;
+            background-size: 20px auto;
+            border-radius: 20px;
+        }
+    }
+    @include screen('mobile') {
+      width: 100%;
+      margin: 0 0 1em 0;  
+  }
+}
 .g-btn{
     width: 48%;
     margin-left: 1%;

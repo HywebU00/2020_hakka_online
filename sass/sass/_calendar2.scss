@@ -62,7 +62,7 @@
 	}
 	.fc-toolbar{
 		position: relative;
-		margin-bottom: .2em;
+		margin-bottom: .5em;
 
 		.fc-left{
 			position: absolute;
@@ -70,7 +70,7 @@
 			top:0;
 			button, input[type="button"]{
 				font-size: .875em;
-				padding: .2em .5em .2em 0;
+				padding: .4em .5em .4em 0;
 			}
 		}
 		.fc-right{
@@ -79,7 +79,7 @@
 			top:0;
 			button, input[type="button"]{
 				font-size: .875em;
-				padding: .2em 0 .2em .5em;
+				padding: .4em 0 .4em .5em;
 			}
 		}
 		.fc-center{
@@ -215,8 +215,8 @@
 			@include make-lg-column(8);
 
 			button, input[type="button"]{
-				font-size: .875em;
-				padding: .3em .5em;
+				font-size: .938em;
+				padding: .5em .5em;
 			}
 			.inlinebox{
 				margin:.5em 1em;
@@ -229,34 +229,34 @@
 					width: 100%;
 					display: block;
 				}
-				&+.datepick {
-					margin-left: .3em;
-					margin-right: 0;
-					padding-right: 0;
-					&:before {
-						content: "~";
-						font-size: 1.5em;
-						display: inline-block;
-						position: absolute;
-						left: -.65em;
-						top: .3em;
-						color: #777;
-					}
-					@include screen('xs_mobile') {
-						margin-left: 0em;
-						&:before {
-							display: none;
-						}
-					}
-					i {
-						right: .5em;
-					}
-				}
+				// &+.datepick {
+				// 	margin-left: .3em;
+				// 	margin-right: 0;
+				// 	padding-right: 0;
+				// 	&:before {
+				// 		content: "~";
+				// 		font-size: 1.5em;
+				// 		display: inline-block;
+				// 		position: absolute;
+				// 		left: -.65em;
+				// 		top: .3em;
+				// 		color: #777;
+				// 	}
+				// 	@include screen('xs_mobile') {
+				// 		margin-left: 0em;
+				// 		&:before {
+				// 			display: none;
+				// 		}
+				// 	}
+				// 	i {
+				// 		right: .5em;
+				// 	}
+				// }
 				i {
 					position: absolute;
 					padding: .37em .1em !important;
-					right: 1em;
-					top: .2em;
+					right: .75em;
+					top: .25em;
 					min-width: 1em;
 					background: none;
 					border: none;
