@@ -158,6 +158,21 @@
 						}
 					}
 				}
+				&.selok a{
+					background: #fdeaf1;
+					box-shadow: 0 0px 0px 1px #f288ad inset;
+					&:before{
+						content:"";
+						width:20px;
+						height: 20px;
+						position: absolute;
+						bottom:2px;
+						right:3px;
+						background: url('../images/icon-ok.png')no-repeat center center;
+						background-size: 16px auto;
+						z-index: 1;
+					}
+				}
 			}
 			.act1{
 				background: #0f9f3b;
