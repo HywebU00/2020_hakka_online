@@ -30,6 +30,9 @@ footer {
         position: relative;
         border-bottom: solid 1px #868686;
         margin-bottom: 1em;
+        img{
+            width: 260px;
+        }
     }
     .footer_info {
         @include make-xs-column(12);
