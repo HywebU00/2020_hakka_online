@@ -1,0 +1,339 @@
+.calendar2{
+	background: #fff;
+	border: solid 1px #b5e4ee;
+	padding: 10px 3px 3px;
+	border-radius: 6px;
+	box-shadow: 0 0 5px #ccc;
+	.monthtb{
+		background: #fff;
+		margin: 0;
+		th{
+			text-align: center;
+			padding: 3px;
+			background: #b5e4ee;
+			color:#333;
+			font-weight: bold;
+			border: solid 1px #eee;
+			&.sun{
+				color: $color-red;
+			}
+			&.sat{
+				color: $color-green;
+			}
+		}
+		td{
+			text-align: center;
+			padding: 3px;
+			border: solid 1px #eee;
+			font-size: .875em;
+			font-weight: bold;
+		}
+		a{
+			display: inline-block;
+			width: 2em;
+			height:2em;
+			line-height: 2em;
+			&:hover, &:focus{
+				background: #eee;
+				border-radius: 50%;
+			}
+		}
+		.rest{
+			// background: #b5e4ee;
+			background: #e4e5e6;
+			color:#fff;
+			span{
+				display: inline-block;
+				width: 2em;
+				height:2em;
+				line-height: 2em;
+			}
+		}
+		.space{
+			background: #e4e5e6;
+		}
+		.today{
+			a{
+				background: $secondaryColor;
+				border-radius: 50%;
+				color:#fff;
+			}
+		}
+	}
+	.fc-toolbar{
+		position: relative;
+		margin-bottom: .5em;
+
+		.fc-left{
+			position: absolute;
+			left:0;
+			top:0;
+			button, input[type="button"]{
+				font-size: .875em;
+				padding: .4em .5em .4em 0;
+			}
+		}
+		.fc-right{
+			position: absolute;
+			right:0;
+			top:0;
+			button, input[type="button"]{
+				font-size: .875em;
+				padding: .4em 0 .4em .5em;
+			}
+		}
+		.fc-center{
+			margin: 0 4em;
+		}
+		h3{
+			text-align: center;
+			font-size: 1.25em;
+			font-weight: bold;
+			line-height: 1.8em;
+			margin: 0;
+		}
+	}
+
+}
+
+//5
+.calendar5{
+	background: #fff;
+	border: solid 1px #b5e4ee;
+	padding: 10px 3px 3px;
+	border-radius: 6px;
+	box-shadow: 0 0 5px #ccc;
+	margin-bottom: 2em;
+	.monthtb{
+		background: #fff;
+		margin: 0;
+		clear: both;
+		th{
+			text-align: center;
+			padding: 5px;
+			background: #b5e4ee;
+			color:#333;
+			font-weight: bold;
+			border: solid 1px #eee;
+			width: 12.5%;
+			height: 3em;
+			&.sun{
+				color: $color-red;
+			}
+			&.sat{
+				color: $color-green;
+			}
+		}
+		td{
+			padding: 5px;
+			border: solid 1px #eee;
+			font-size: .938em;
+			vertical-align: top;
+			height: 4.5em;
+		}
+
+		ul{
+			@include li-reset;
+			li{
+				margin: 3px 0;
+				padding: 0;
+				position: relative;
+				a{
+					display: block;
+					border-radius: 5px;
+					padding: 0 25px 0 0;
+					&:hover, &:focus{
+						background: #fdeaf1;
+						box-shadow: 0 0px 0px 1px #f288ad inset;
+						&:before{
+							content:"";
+							width:20px;
+							height: 20px;
+							position: absolute;
+							bottom:2px;
+							right:3px;
+							background: url('../images/icon-ok.png')no-repeat center center;
+							background-size: 16px auto;
+							z-index: 1;
+						}
+					}
+				}
+				&.selok a{
+					background: #fdeaf1;
+					box-shadow: 0 0px 0px 1px #f288ad inset;
+					&:before{
+						content:"";
+						width:20px;
+						height: 20px;
+						position: absolute;
+						bottom:2px;
+						right:3px;
+						background: url('../images/icon-ok.png')no-repeat center center;
+						background-size: 16px auto;
+						z-index: 1;
+					}
+				}
+			}
+			.act1{
+				background: #0f9f3b;
+				padding: .3em .5em;
+				margin:0 .5em 0 0;
+				border-radius: 3px;
+				color:#fff;
+				font-size: .875em;
+				font-weight: bold;
+				min-width: 4em;
+				display: inline-block;
+				line-height: 1.25em;
+				text-align: center;
+				vertical-align: top;
+			}
+		}
+
+		.rest{
+			background: #e4e5e6;
+			color:#fff;
+			span{
+				display: inline-block;
+				width: 2em;
+				height:2em;
+				line-height: 2em;
+			}
+		}
+		.space{
+			background: #ccc;
+		}
+		.today{
+			a{
+				background: $secondaryColor;
+				border-radius: 50%;
+				color:#fff;
+			}
+		}
+
+	}
+	.fc-toolbar{
+		position: relative;
+		margin-bottom: .2em;
+		overflow: hidden;
+
+		.r-block{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+			@include make-lg-column(4);     
+		}
+		.c-block{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(8);
+			@include make-lg-column(8);
+
+			button, input[type="button"]{
+				font-size: .938em;
+				padding: .5em .5em;
+			}
+			.inlinebox{
+				margin:.5em 1em;
+			}
+			.datepick {
+				padding-right: .5em;
+				position: relative;
+				display: inline-block;
+				@include screen('xs_mobile') {
+					width: 100%;
+					display: block;
+				}
+				// &+.datepick {
+				// 	margin-left: .3em;
+				// 	margin-right: 0;
+				// 	padding-right: 0;
+				// 	&:before {
+				// 		content: "~";
+				// 		font-size: 1.5em;
+				// 		display: inline-block;
+				// 		position: absolute;
+				// 		left: -.65em;
+				// 		top: .3em;
+				// 		color: #777;
+				// 	}
+				// 	@include screen('xs_mobile') {
+				// 		margin-left: 0em;
+				// 		&:before {
+				// 			display: none;
+				// 		}
+				// 	}
+				// 	i {
+				// 		right: .5em;
+				// 	}
+				// }
+				i {
+					position: absolute;
+					padding: .37em .1em !important;
+					right: .75em;
+					top: .25em;
+					min-width: 1em;
+					background: none;
+					border: none;
+					width: auto;
+					pointer-events: none;
+					&:hover, &:focus {
+						box-shadow: none;
+						border: none !important;
+					}
+				}
+				>input[type="date"] {
+					width:10em;
+					padding-right: 0;
+					@include screen('xs_mobile') {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+	}
+	.int{
+		margin: 1em 0 0.5em 1em;
+		padding: 0;
+		text-align: left;
+		font-size: .938em;
+		dt{
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+		dd{
+			display: inline-block;
+			margin: 0;
+			padding: 0 0 0 20px;
+			position: relative;
+			&.ok{
+				&:before{
+					content:"";
+					width: 1em;
+					height: 1em;
+					border-radius: 3px;
+					position: absolute;
+					left:0;
+					top:.25em;
+					background: #0f9f3b;
+				}
+			}
+			&.no{
+				&:before{
+					content:"";
+					width: 1em;
+					height: 1em;
+					border-radius: 3px;
+					position: absolute;
+					left:0;
+					top:.25em;
+					background: #ccc;
+				}
+			}
+		}
+	}
+
+
+}
