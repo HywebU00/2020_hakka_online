@@ -292,9 +292,9 @@ legend {
     // white-space: nowrap;
     display: inline-block;
     margin: 0 0 .5em 0;
-    @include screen('xs_mobile') {
-        display: block;
-    }
+    // @include screen('xs_mobile') {
+    //     display: block;
+    // }
     &.inline {
         input,
         select,
