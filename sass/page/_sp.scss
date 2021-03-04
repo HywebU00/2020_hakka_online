@@ -981,7 +981,7 @@
 
 		li{
 			display: inline-block;
-			color:#6cc1d3;
+			color:$primaryColor;
 			position: relative;
 			margin: 0!important;
 			padding: 0!important;
@@ -990,6 +990,8 @@
 			p{
 				margin: 0 2em 0 2em;
 				font-size: 1.125em;
+				font-weight: bold;
+
 				@include screen('tablet') {
 					font-size: 1em;
 
@@ -1011,7 +1013,7 @@
 					content: '';
 					width:100%;
 					height: 3px;
-					background: #96d4e1;
+					background: $primaryColor;
 					position: absolute;
 					top:24px;
 					left:50%;
@@ -1027,9 +1029,9 @@
 					margin-left: -26px;
 					background: #fff;
 					border-radius: 25px;
-					border: solid 3px #96d4e1;
+					border: solid 3px $primaryColor;
 					z-index: 1;
-					color:#96d4e1;
+					color:$primaryColor;
 					font-size: 1.8em;
 					font-family: 'Jost', sans-serif;
 					line-height: 1.6em;

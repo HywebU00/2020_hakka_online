@@ -81,8 +81,8 @@
         &:focus {
             color: #FFF;
             @include gradient(darken($secondaryColor, 0), darken($secondaryColor, 15), vertical);
-            border: 1px solid darken($secondaryColor, 15);
-            box-shadow: none;
+            border: 1px solid darken($secondaryColor, 15)!important;
+            box-shadow: 0 0px 0px 2px $aFocus inset!important;
         }
         &.active {
             color: #FFF;

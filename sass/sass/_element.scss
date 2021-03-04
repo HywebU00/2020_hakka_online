@@ -1,7 +1,7 @@
 // tab的外框線
 a:focus {
     outline: none;
-    box-shadow: 0 0px 0px 1px $aHover inset;
+    box-shadow: 0 0px 0px 2px $aFocus;
     @include screen('mobile') {
         box-shadow: none;
     }
@@ -113,6 +113,7 @@ a.more {
     &:hover,&:focus{
         background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.8);
         box-shadow:none;
+        box-shadow: 0 0px 0px 2px $aFocus inset;
     }
 }
 

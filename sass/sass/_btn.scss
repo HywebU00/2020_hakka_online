@@ -62,6 +62,7 @@ $btn-radius:.2em;
     &:focus {
         color: $btn-font-color;
         outline: none;
+        box-shadow: 0 0px 0px 2px $aFocus inset;
     }
 }
 //按鈕顏色
