@@ -1040,8 +1040,15 @@
 
 
 				}
-			}
 
+			}
+			&:last-child{
+				div{
+					&:before{
+						width:0;
+					}
+				}
+			}
 
 		}
 		.step1{
@@ -1065,9 +1072,9 @@
 			}
 		}
 		.step5{
-			&:before{
-				width:0;
-			}
+			// &:before{
+			// 	width:0;
+			// }
 			&:after{
 				content:"5";
 			}
