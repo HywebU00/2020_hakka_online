@@ -988,12 +988,14 @@
 			vertical-align: top;
 
 			p{
-				margin: 0 2em 0 2em;
+				margin: 0 1em 0 1em;
 				font-size: 1.125em;
 				font-weight: bold;
+				width: 8em;
 
 				@include screen('tablet') {
 					font-size: 1em;
+					width: 4em;
 
 				}
 				@include screen('mobile') {
@@ -1058,11 +1060,16 @@
 			}
 		}
 		.step4{
+			&:after{
+				content:"4";
+			}
+		}
+		.step5{
 			&:before{
 				width:0;
 			}
 			&:after{
-				content:"4";
+				content:"5";
 			}
 		}
 		.here{
@@ -1093,6 +1100,15 @@
 
 			}
 			.step4{
+				&:after{
+					background: $primaryColor;
+					border:solid 3px $primaryColor;
+					color:#fff;
+				}
+				p{color:$primaryColor;font-weight: bold;}
+
+			}
+			.step5{
 				&:before{
 					width:0;
 				}
