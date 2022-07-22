@@ -1180,6 +1180,25 @@
 				background: url('../images/pic_d02.jpg')no-repeat left top;
 				background-size: cover;
 			}
+			&.camp1 a{
+				background: url('../images/pic_d03.jpg')no-repeat center top;
+				background-size: cover;
+			}
+			&.camp2 a{
+				background: url('../images/pic_d04.jpg')no-repeat center top;
+				background-size: cover;
+			}
+		}
+	}
+
+	.topimg{
+		overflow: hidden;
+		position: relative;
+		@include aspect-ratio(16, 3);
+		margin-bottom: 2em;
+		img{
+			width: 100%;
+			height: auto;
 		}
 	}
 }
