@@ -84,6 +84,7 @@ $grid-background-baseline-color: rgba(187, 187, 187, 0.4);
         @include screen('mobile') {
             max-width: 100%;
             width: auto;
+            height:auto;
             clear: both;
         }
     }
