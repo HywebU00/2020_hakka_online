@@ -13,6 +13,10 @@
     border-radius:8px;
     box-shadow:1px 1px 15px RGBA(0, 0, 0, .5);
     animation: scaleUp .5s ease-out;
+    @include screen('mobile') {
+        width: 90%;
+        margin-left: -45%;
+    }
     h2 {
         border-bottom: 1px solid $primaryColor;
         padding-bottom: .5em;

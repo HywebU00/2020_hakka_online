@@ -34,6 +34,7 @@
 		}
 		.fb-btn{
 			margin-right: 1%;
+			margin-bottom: 8px;
 			a{
 				background: #fff;
 				color:#1c1c1c;
@@ -66,7 +67,8 @@
 			}
 		}
 		.g-btn{
-			margin-left: 1%;
+			margin-left: 0;
+			margin-bottom: 8px;
 
 			a{
 				background: #fff;
@@ -103,6 +105,7 @@
 
 		.y-btn{
 			margin-left: 1%;
+			margin-bottom: 8px;
 
 			a{
 				background: #fff;
@@ -136,6 +139,42 @@
 				margin: 0 0 1em 0;  
 			}
 		}
+
+		.m-btn{
+			margin-right: 1%;
+			margin-bottom: 8px;
+			a{
+				background: #fff;
+				color:#1c1c1c;
+				font-size: 1.15em;
+				position: relative;
+				padding: 15px 30px 15px 60px;
+				display: block;
+				box-shadow: 0 0 5px 1px #ccc;
+				border-radius: 30px;
+
+				&:hover, &:focus{
+					background: darken(#fff, 8);
+					box-shadow: 0 2px 5px 1px #999;
+				}
+				&:before{
+					content:"";
+					width:34px;
+					height:34px;
+					position: absolute;
+					top:.5em;
+					left:.8em;
+					background:#c63165 url('../images/m-btn.png')no-repeat center center;
+					background-size: 20px auto;
+					border-radius: 20px;
+				}
+			}
+			@include screen('mobile') {
+				width: 100%;
+				margin: 0 0 1em 0;  
+			}
+		}
+
 	}
 }
 //loginbtn2
@@ -1536,4 +1575,121 @@
 .right-btn2{
 	margin: -1em 0 1em;
 	float:right;
+}
+
+.memberlogin{
+	h2{
+		text-align: center;
+	}
+	input{
+		width:calc(100% - 3.5em);
+	}
+	label{
+	}
+
+	.form_grp{
+		padding: 1em 1em .5em;
+	}
+	.fun{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li{
+			display: inline-block;
+			a{
+				padding: 1em;
+				display: block;
+				text-decoration: underline;
+				background: url('../images/arrow2.png')no-repeat left center;
+				background-size: 6px auto;
+				&:hover, &:focus{
+					color:$secondaryColor;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.quicklogin{
+	display: flex;
+	justify-content: center;
+	margin-left: 1em;
+	h3{
+		flex:0 1 5em;
+		text-align: right;
+		font-size: 1.125em;
+		font-weight: normal;
+		position: relative;
+		padding-left: .5em;
+		&:before{
+			content:'';
+			width: 5px;
+			height: .8em;
+			background:#e34079;
+			position: absolute;
+			top:.2em;
+			left:0;
+		}
+		@include screen('mobile') {
+			font-size: 1em;
+			&:before{
+				content:'';
+				width: 5px;
+				height: .8em;
+				background:#e34079;
+				position: absolute;
+				top:.3em;
+				left:0;
+			}
+		}
+	}
+	ul{
+		flex:1 1 auto;
+		justify-content: flex-start;
+		margin: 0;
+		padding: 0 0 0 1em;
+		@include screen('mobile') {
+			padding: 0 0 0 .1em;
+		}
+
+		li{
+			display: inline-block;
+			vertical-align: top;
+			margin: 5px;
+			a{
+				display: block;
+				box-shadow: 0 0 5px 1px #ccc;
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				padding: 5px;
+				text-align: center;
+				&:hover, &:focus{
+					box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+				}
+			}
+			.g-btn{
+				background: #fff;
+				img{
+					width: 100%;
+				}
+			}
+			.fb-btn{
+				background:#3c5a9a;
+				padding-top: 10px;
+				img{
+					width: 80%;
+				}
+			}
+			.y-btn{
+				background:#6001d1;
+				padding-top: 12px;
+				img{
+					width: 70%;
+				}
+			}	
+		}
+	}
 }
