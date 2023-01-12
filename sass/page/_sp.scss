@@ -1578,15 +1578,31 @@
 }
 
 .memberlogin{
+	text-align: left;
 	h2{
 		text-align: center;
+		font-family: 'Noto Sans TC', sans-serif;
+		font-size: 1.5em;
+		color: #333;
+		font-weight: 600;
+		text-shadow: none;
+		letter-spacing: 1px;
+		margin: 0;
+		padding:.5em;
 	}
 	input{
-		width:calc(100% - 3.5em);
+		width:calc(100% - 5em);
 	}
 	label{
+		min-width: 4em;
 	}
-
+	img{
+		vertical-align: middle;
+		float: right;
+	}
+	.codeinput{
+		width:calc(100% - 10em);
+	}
 	.form_grp{
 		padding: 1em 1em .5em;
 	}

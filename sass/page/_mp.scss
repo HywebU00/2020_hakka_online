@@ -118,21 +118,73 @@ p{
   margin: 1em 0 1.5em; 
 }
 .btnbox{
-    ul{
+    >ul{
         margin: 0;
         padding: 0;
         list-style: none;
-        li{
+        >li{
             display: inline-block;
             text-align: center;
             margin-bottom: 1em;
-            a{
+            >a{
               display: block;
               border-radius: 2em;
           }
+
+      }
+      >li.m-btn{
+        width: 48%;
+        margin-right: 1%;
+        >a{
+            background: #fff;
+            color:#1c1c1c;
+            font-size: 1.15em;
+            position: relative;
+            padding: 20px 10px 20px 20px;
+            font-weight: bold;
+            &:hover, &:focus{
+                background: darken(#fff, 8);
+            }
+            &:before{
+                content:"";
+                width:34px;
+                height:34px;
+                position: absolute;
+                top:.8em;
+                left:15%;
+                background:#c63165 url("../images/m-btn.png") no-repeat center center;
+                background-size: 20px auto;
+                border-radius: 20px;
+            }
+        }
+        .fun{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            li{
+                display: inline-block;
+                a{
+                    padding: 1em;
+                    display: block;
+                    text-decoration: underline;
+                    background: url('../images/arrow2.png')no-repeat left center;
+                    background-size: 6px auto;
+                    &:hover, &:focus{
+                        color:$secondaryColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        @include screen('mobile') {
+          width: 100%;
+          margin: 0 0 1em 0;  
       }
   }
-  .s-btn{
+
+}
+.s-btn{
     width: 100%;
     a{
         background: #e34079;
@@ -158,36 +210,7 @@ p{
         }
     }
 }
-.m-btn{
-    width: 48%;
-    margin-right: 1%;
-    a{
-        background: #fff;
-        color:#1c1c1c;
-        font-size: 1.15em;
-        position: relative;
-        padding: 20px 10px 20px 20px;
-        font-weight: bold;
-        &:hover, &:focus{
-            background: darken(#fff, 8);
-        }
-        &:before{
-            content:"";
-            width:34px;
-            height:34px;
-            position: absolute;
-            top:.8em;
-            left:15%;
-            background:#c63165 url("../images/m-btn.png") no-repeat center center;
-            background-size: 20px auto;
-            border-radius: 20px;
-        }
-    }
-    @include screen('mobile') {
-      width: 100%;
-      margin: 0 0 1em 0;  
-  }
-}
+
 .fb-btn{
     width: 48%;
     margin-right: 1%;

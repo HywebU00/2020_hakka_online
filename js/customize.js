@@ -97,11 +97,11 @@ $(function() {
         lazy: true
     });
      // cp_photo
-     $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
+    $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('.controls').html(i + '/' + slick.slideCount);
     });
-     $('.Slider-for').slick({
+    $('.Slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -112,7 +112,7 @@ $(function() {
         asNavFor: '.Slider-nav',
         infinite: true
     });
-     $('.Slider-nav').slick({
+    $('.Slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.Slider-for',
@@ -122,8 +122,8 @@ $(function() {
         focusOnSelect: true,
         infinite: true
     });
-     
- });
+
+});
 
 
 //
@@ -152,5 +152,8 @@ $(function() {
     //點選關閉按鈕及透明底都可關閉
     $('.modal_overlay').click(closeModal);
     $('.modal .close').click(closeModal);
+    $('.modal').find('.fun li:last').focusout(function() {
+        $(this).parents('.memberlogin').hide();
+    });
 
 });
