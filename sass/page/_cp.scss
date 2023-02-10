@@ -116,6 +116,12 @@ h1.title, h2.title {
     a {
         @include aSetting;
     }
+    .datetime{
+        p{
+            line-height: 1.6em;
+            margin: 0 .5em;
+        }
+    }
 }
 // 文章標籤
 div.tag {
