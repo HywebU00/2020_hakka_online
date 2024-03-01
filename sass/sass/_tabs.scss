@@ -14,11 +14,11 @@
         &.active>a {
             background-color: $color-purple;
             color: #FFF;
-            border-color: #e34079;
+            border-color: #DF2566;
 
 
             &:hover, &:focus{
-                background: darken(#e34079, 8);
+                background: darken(#DF2566, 8);
             }
         }
         float: left;
@@ -33,7 +33,7 @@
                 border-bottom: 1px solid #888;
             }
             &.active>a {
-                border-color: #e34079;
+                border-color: #DF2566;
             }
         }
         &>a {
