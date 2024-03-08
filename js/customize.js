@@ -152,8 +152,11 @@ $(function() {
     //點選關閉按鈕及透明底都可關閉
     $('.modal_overlay').click(closeModal);
     $('.modal .close').click(closeModal);
-    $('.modal').find('.fun li:last').focusout(function() {
+    // $('.modal').find('.fun li:last').focusout(function() {
+    //     $(this).parents('.memberlogin').hide();
+    $('.modal').find('.closebtn a').focusout(function() {
         $(this).parents('.memberlogin').hide();
     });
+    // });
 
 });

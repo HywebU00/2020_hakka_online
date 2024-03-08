@@ -1598,10 +1598,11 @@
 	}
 	img{
 		vertical-align: middle;
-		float: right;
+		width: 95px;
+		// float: right;
 	}
 	.codeinput{
-		width:calc(100% - 10em);
+		width:calc(100% - 11.5em);
 	}
 	.form_grp{
 		padding: 1em 1em .5em;
@@ -1626,6 +1627,103 @@
 			}
 		}
 	}
+	p{
+		text-shadow: none;
+		color:#666;
+		font-weight: normal;
+		font-size: .938rem;
+		margin: 10px 8%;
+	}
+	dl{
+		margin: 0;
+    // display: flex;
+    // flex-wrap:nowrap;
+    text-align: center;
+    dt{
+    	padding: 0 0 2em 0;color:#666;text-align: center;
+    	position: relative;
+    	&:before{
+    		content:'';
+    		width: 75px;
+    		height: 1px;
+    		background: #666;
+    		position: absolute;
+    		left:8%;
+    		top:.8em;
+    	}
+    	&:after{
+    		content:'';
+    		width: 75px;
+    		height: 1px;
+    		background: #666;
+    		position: absolute;
+    		right:8%;
+    		top:.8em;
+    	}
+    }
+    dd{
+    	display: inline-block;margin-inline-start: 5px;margin-inline-end: 5px;height: 50px;
+    	position: relative;
+
+    	@include screen('mobile') {
+    		margin-inline-start: 2px;margin-inline-end: 2px;  
+    	}
+    	a{
+    		display: block;
+    		height: 40px;
+    		width: 40px;
+    	}
+    }
+    img{
+    	width: 40px;
+    	height: 40px;
+    	box-shadow: 1px 2px 5px 0px rgba(0,0,0, .3);
+    	border-radius: 50%;
+    }
+    .lastused{
+    	background: rgba(0, 0, 0, .5);
+    	position: absolute;
+    	color:#fff;
+    	font-size: .875em;
+    	min-width: 6.5em;
+    	top:-28px;
+    	padding-left: 20px;
+    	border-radius: 3px;
+    	&:before{
+    		content: "";
+    		position: absolute;
+    		top: 3px;
+    		left: 5px;
+    		width: 16px;
+    		height: 16px;
+    		background: url('../images/key.png')no-repeat center center;
+    		background-size: 16px auto;
+    	}
+    	&:after{
+    		content: "";
+    		position: absolute;
+    		bottom: -4px;
+    		left: 15px;
+    		width: 0;
+    		height: 0;
+    		border-width: 4px 4px 0;
+    		border-style: solid;
+    		border-color: rgba(0, 0, 0, .5) transparent transparent;
+    	}
+    }
+
+
+
+}
+
+.closebtn{
+	text-align: center;
+	a{
+		display: inline-block;
+		color:#fff;
+	}
+}
+
 }
 
 .quicklogin{
