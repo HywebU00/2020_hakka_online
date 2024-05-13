@@ -949,6 +949,14 @@
 		.img-container{
 			@include aspect-ratio(4, 2.5); 
 		}
+		.classify{
+			background: #120561;
+			text-align: left;
+			color:#fff;
+			font-weight: bold;
+			padding: .5em 1em;
+			line-height: 1em;
+		}
 
 	}
 	.more{
